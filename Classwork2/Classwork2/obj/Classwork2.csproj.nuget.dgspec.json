@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\WinFormsLesson4.csproj": {}
+    "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\Classwork2\\Classwork2\\Classwork2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\WinFormsLesson4.csproj": {
+    "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\Classwork2\\Classwork2\\Classwork2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\WinFormsLesson4.csproj",
-        "projectName": "WinFormsLesson4",
-        "projectPath": "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\WinFormsLesson4.csproj",
+        "projectUniqueName": "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\Classwork2\\Classwork2\\Classwork2.csproj",
+        "projectName": "Classwork2",
+        "projectPath": "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\Classwork2\\Classwork2\\Classwork2.csproj",
         "packagesPath": "C:\\Users\\dev.itstep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\obj\\",
+        "outputPath": "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\Classwork2\\Classwork2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dev.itstep\\AppData\\Roaming\\NuGet\\NuGet.Config",
