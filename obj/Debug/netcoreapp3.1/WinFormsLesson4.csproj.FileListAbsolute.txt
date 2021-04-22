@@ -1,0 +1,15 @@
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\bin\Debug\netcoreapp3.1\WinFormsLesson4.exe
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\bin\Debug\netcoreapp3.1\WinFormsLesson4.deps.json
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\bin\Debug\netcoreapp3.1\WinFormsLesson4.runtimeconfig.json
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\bin\Debug\netcoreapp3.1\WinFormsLesson4.runtimeconfig.dev.json
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\bin\Debug\netcoreapp3.1\WinFormsLesson4.dll
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\bin\Debug\netcoreapp3.1\WinFormsLesson4.pdb
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\obj\Debug\netcoreapp3.1\WinFormsLesson4.csprojAssemblyReference.cache
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\obj\Debug\netcoreapp3.1\WinFormsLesson4.Form1.resources
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\obj\Debug\netcoreapp3.1\WinFormsLesson4.csproj.GenerateResource.cache
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\obj\Debug\netcoreapp3.1\WinFormsLesson4.AssemblyInfoInputs.cache
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\obj\Debug\netcoreapp3.1\WinFormsLesson4.AssemblyInfo.cs
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\obj\Debug\netcoreapp3.1\WinFormsLesson4.csproj.CoreCompileInputs.cache
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\obj\Debug\netcoreapp3.1\WinFormsLesson4.dll
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\obj\Debug\netcoreapp3.1\WinFormsLesson4.pdb
+C:\Users\mka\source\repos\WinFormsLesson4\WinFormsLesson4\obj\Debug\netcoreapp3.1\WinFormsLesson4.genruntimeconfig.cache
