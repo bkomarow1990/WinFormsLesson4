@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\dev.itstep\\.nuget\\packages\\": {}
+    "C:\\Users\\Igor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\Classwork2\\Classwork2\\Classwork2.csproj",
+      "projectUniqueName": "C:\\Users\\Igor\\source\\repos\\WinFormsLesson4\\Classwork2\\Classwork2\\Classwork2.csproj",
       "projectName": "Classwork2",
-      "projectPath": "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\Classwork2\\Classwork2\\Classwork2.csproj",
-      "packagesPath": "C:\\Users\\dev.itstep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\Classwork2\\Classwork2\\obj\\",
+      "projectPath": "C:\\Users\\Igor\\source\\repos\\WinFormsLesson4\\Classwork2\\Classwork2\\Classwork2.csproj",
+      "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Igor\\source\\repos\\WinFormsLesson4\\Classwork2\\Classwork2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dev.itstep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

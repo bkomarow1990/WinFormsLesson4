@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fudbetENTG24uaUeBnrgKHLSuoXdWliMdp/E8BvUgiy7RoUMtIW1nugKjQEoYRkNnOp900+Fv4NJMgLZCExevw==",
+  "dgSpecHash": "xwHFNaOXcaQzg10c62n1EBIQazh06PUCnDRhhibjTakGkFpN38rHsjaI3KDRQsGDZ1vNOXkp9dNpz5aB5WRFVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dev.itstep\\source\\repos\\WinFormsLesson4\\Classwork2\\EventsHW\\EventsHW.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Igor\\source\\repos\\WinFormsLesson4\\Classwork2\\EventsHW\\EventsHW.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Igor\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

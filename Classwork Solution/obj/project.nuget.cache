@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "7pXB+E6K+pO3cQsO3vslRMnxqrq5udFHb9+toI9iVDepgoeDUPHAKyvKbWL4c2U+fap/RtlE0BDyI7z9kD8UiQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Igor\\Source\\Repos\\WinFormsLesson4\\WinFormsLesson4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Igor\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Igor\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
