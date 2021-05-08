@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classwork2", "Classwork2\Classwork2.csproj", "{89EA0BA9-550A-4CFA-ACEE-DB1CC03EF910}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsHW", "EventsHW\EventsHW.csproj", "{66EF6B4C-54F0-4090-89E1-82F4602FBBB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsHW", "EventsHW\EventsHW.csproj", "{66EF6B4C-54F0-4090-89E1-82F4602FBBB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW_Calc", "HW_Calc\HW_Calc.csproj", "{07C04752-1222-45CB-9D64-864948E199ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{66EF6B4C-54F0-4090-89E1-82F4602FBBB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66EF6B4C-54F0-4090-89E1-82F4602FBBB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66EF6B4C-54F0-4090-89E1-82F4602FBBB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07C04752-1222-45CB-9D64-864948E199ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07C04752-1222-45CB-9D64-864948E199ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07C04752-1222-45CB-9D64-864948E199ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07C04752-1222-45CB-9D64-864948E199ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

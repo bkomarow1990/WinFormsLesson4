@@ -13,13 +13,10 @@ namespace EventsHW
 {
     public partial class Form1 : Form
     {
-        delegate void ImporterHandler();
-        event ImporterHandler Imported;
         public WorkWithJsonEvent jsonworker = new WorkWithJsonEvent("Events.json");
         public Form1()
         {
             InitializeComponent();
-            Imported += Import;
         }
         public void Import()
         {
@@ -102,6 +99,7 @@ namespace EventsHW
             }
             EditEventForm editform = new EditEventForm(this);
             editform.events_ = eventsListBox;
+            
             //this.Hide();
             editform.Show();
             //this.Hide();
