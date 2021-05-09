@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace HW_Calc
 {
-    public enum Modes { First=1,Second,Third}
+    public enum Modes { First=1,Second,Trigono}
+    public enum Operations { Add=1,Minus,Mult,Div};
+    public enum TrigonoModes { Sin =1, Cos, Tang};
+    
     delegate decimal Operation(decimal one, decimal two);
     
     public partial class Form1 : Form
     {
-        public static decimal Add(decimal one, decimal two)
-        {
-            return one + two;
-        }
-        public static decimal Minus(decimal one, decimal two)
-        {
-            return one - two;
-        }
+        private TrigonoModes trigmode;
+        private Operations operation;
+        //public static decimal Add(decimal one, decimal two)
+        //{
+        //    return one + two;
+        //}
+        //public static decimal Minus(decimal one, decimal two)
+        //{
+        //    return one - two;
+        //}
         //Operation operation;
         Modes mode = Modes.First;
         bool firstMinus = false;
@@ -43,10 +48,31 @@ namespace HW_Calc
                 commas[i] = false;
             }
         }
+        private bool TrigonoCheck(byte num)
+        {
+            if (mode == Modes.Trigono)
+            {
+                if (displayTxtBox.Text.Length == 4)
+                {
+                    displayTxtBox.Text += num;
+                    return true;
+                }
+                if (displayTxtBox.Text.Length == 5 && displayTxtBox.Text[4] == '0')
+                {
+                    displayTxtBox.Text = displayTxtBox.Text.Remove(4);
+                    displayTxtBox.Text = displayTxtBox.Text.Insert(4, num.ToString());
+                    return true;
+                }
 
+            }
+                return false;
+        }
         private void btn1_Click(object sender, EventArgs e)
         {
-            
+            if (TrigonoCheck(1))
+            {
+                return;
+            }
             if (displayTxtBox.Text == "0")
             {
                 displayTxtBox.Text = "1";
@@ -57,6 +83,10 @@ namespace HW_Calc
 
         private void btn2_Click(object sender, EventArgs e)
         {
+            if (TrigonoCheck(2))
+            {
+                return;
+            }
             if (displayTxtBox.Text == "0")
             {
                 displayTxtBox.Text = "2";
@@ -67,6 +97,10 @@ namespace HW_Calc
 
         private void btn3_Click(object sender, EventArgs e)
         {
+            if (TrigonoCheck(3))
+            {
+                return;
+            }
             if (displayTxtBox.Text == "0")
             {
                 displayTxtBox.Text = "3";
@@ -77,6 +111,10 @@ namespace HW_Calc
 
         private void btn4_Click(object sender, EventArgs e)
         {
+            if (TrigonoCheck(4))
+            {
+                return;
+            }
             if (displayTxtBox.Text == "0")
             {
                 displayTxtBox.Text = "4";
@@ -87,6 +125,10 @@ namespace HW_Calc
 
         private void btn5_Click(object sender, EventArgs e)
         {
+            if (TrigonoCheck(5))
+            {
+                return;
+            }
             if (displayTxtBox.Text == "0")
             {
                 displayTxtBox.Text = "5";
@@ -97,6 +139,10 @@ namespace HW_Calc
 
         private void btn6_Click(object sender, EventArgs e)
         {
+            if (TrigonoCheck(6))
+            {
+                return;
+            }
             if (displayTxtBox.Text == "0")
             {
                 displayTxtBox.Text = "6";
@@ -107,6 +153,10 @@ namespace HW_Calc
 
         private void btn7_Click(object sender, EventArgs e)
         {
+            if (TrigonoCheck(7))
+            {
+                return;
+            }
             if (displayTxtBox.Text == "0")
             {
                 displayTxtBox.Text = "7";
@@ -117,6 +167,10 @@ namespace HW_Calc
 
         private void btn8_Click(object sender, EventArgs e)
         {
+            if (TrigonoCheck(8))
+            {
+                return;
+            }
             if (displayTxtBox.Text == "0")
             {
                 displayTxtBox.Text = "8";
@@ -127,6 +181,10 @@ namespace HW_Calc
 
         private void btn9_Click(object sender, EventArgs e)
         {
+            if (TrigonoCheck(9))
+            {
+                return;
+            }
             if (displayTxtBox.Text == "0")
             {
                 displayTxtBox.Text = "9";
@@ -142,9 +200,48 @@ namespace HW_Calc
                 displayTxtBox.Text = "0";
                 return;
             }
+            if (mode== Modes.Trigono)
+            {
+                if (displayTxtBox.Text.Length == 5 && displayTxtBox.Text[4] == '0')
+                {
+                    return;
+                }
+            }
             if (mode == Modes.Second)
             {
-
+                String str = this.displayTxtBox.Text;
+                char symb = ' ';
+                if (str[0] == '-')
+                {
+                    str = str.Remove(0);
+                }
+                switch (operation)
+                {
+                    case Operations.Add:
+                        symb = '+';
+                        break;
+                    case Operations.Minus:
+                        symb = '-';
+                        break;
+                    case Operations.Mult:
+                        symb = '*';
+                        break;
+                    case Operations.Div:
+                        symb = '/';
+                        break;
+                    default:
+                        break;
+                }
+                int indexafterplus = str.IndexOf(symb);
+                if (indexafterplus+1 >= str.Length)
+                {
+                    displayTxtBox.Text += '0';
+                    return;
+                }
+                if (str[indexafterplus+1]=='0')
+                {
+                    return;
+                }
             }
             displayTxtBox.Text += '0';
         }
@@ -156,6 +253,7 @@ namespace HW_Calc
                 return;
             }
             this.mode = Modes.Second;
+            operation = Operations.Add;
             //this.operation = Add;
             //this.first = Decimal.Parse(this.displayTxtBox.Text);
             this.displayTxtBox.Text += '+';
@@ -167,6 +265,32 @@ namespace HW_Calc
             if (mode == Modes.First)
             {
                 return;
+            }
+            else if (mode == Modes.Trigono)
+            {
+                int index = displayTxtBox.Text.IndexOf('(');
+                if (++index >= displayTxtBox.Text.Length)
+                {
+                    return;
+                }
+                string res = displayTxtBox.Text.Substring(index);
+                switch (trigmode)
+                {
+                    case TrigonoModes.Sin:
+                        displayTxtBox.Text = Math.Sin(Double.Parse(res)).ToString();
+                        break;
+                    case TrigonoModes.Cos:
+                        displayTxtBox.Text = Math.Cos(Double.Parse(res)).ToString();
+                        break;
+                    case TrigonoModes.Tang:
+                        displayTxtBox.Text = Math.Tan(Double.Parse(res)).ToString();
+                        break;
+                    default:
+                        break;
+                }
+                
+                mode = Modes.First;
+
             }
             try { 
             string value = this.displayTxtBox.Text;
@@ -230,6 +354,7 @@ namespace HW_Calc
                 return;
             }
             this.mode = Modes.Second;
+            operation = Operations.Minus;
             //this.operation = Minus;
             //this.first = Decimal.Parse(this.displayTxtBox.Text);
             this.displayTxtBox.Text += '-';
@@ -242,6 +367,7 @@ namespace HW_Calc
                 return;
             }
             this.mode = Modes.Second;
+            operation = Operations.Mult;
             this.displayTxtBox.Text += '*';
         }
 
@@ -252,6 +378,7 @@ namespace HW_Calc
                 return;
             }
             this.mode = Modes.Second;
+            operation = Operations.Div;
             this.displayTxtBox.Text += '/';
         }
 
@@ -452,6 +579,27 @@ namespace HW_Calc
             {
                 equalsBtn_Click(null, null);
             }
+        }
+
+        private void sinBtn_Click(object sender, EventArgs e)
+        {
+            mode = Modes.Trigono;
+            trigmode = TrigonoModes.Sin;
+            this.displayTxtBox.Text = "sin(";
+        }
+
+        private void cosBtn_Click(object sender, EventArgs e)
+        {
+            mode = Modes.Trigono;
+            trigmode = TrigonoModes.Cos;
+            this.displayTxtBox.Text = "cos(";
+        }
+
+        private void tanBtn_Click(object sender, EventArgs e)
+        {
+            mode = Modes.Trigono;
+            trigmode = TrigonoModes.Tang;
+            this.displayTxtBox.Text = "tg(";
         }
     }
 }

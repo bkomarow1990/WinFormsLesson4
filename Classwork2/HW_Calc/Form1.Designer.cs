@@ -474,6 +474,7 @@ namespace HW_Calc
             this.sinBtn.TabIndex = 21;
             this.sinBtn.Text = "SIN";
             this.sinBtn.UseVisualStyleBackColor = false;
+            this.sinBtn.Click += new System.EventHandler(this.sinBtn_Click);
             // 
             // cosBtn
             // 
@@ -488,6 +489,7 @@ namespace HW_Calc
             this.cosBtn.TabIndex = 22;
             this.cosBtn.Text = "COS";
             this.cosBtn.UseVisualStyleBackColor = false;
+            this.cosBtn.Click += new System.EventHandler(this.cosBtn_Click);
             // 
             // tanBtn
             // 
@@ -502,6 +504,7 @@ namespace HW_Calc
             this.tanBtn.TabIndex = 23;
             this.tanBtn.Text = "TAN";
             this.tanBtn.UseVisualStyleBackColor = false;
+            this.tanBtn.Click += new System.EventHandler(this.tanBtn_Click);
             // 
             // Form1
             // 
